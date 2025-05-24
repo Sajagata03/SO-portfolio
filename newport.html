@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The SO.. Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXRM88+OGt4Brc5GdF+6zJ9z+XMIw4zSpvYv+zvFq5OBUogc2xRPcgG+FYt3eTfIpr9aZfwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #a5e0e7, #eeb0b0);
+      color: #333;
+    }
+    header {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #00796b, #004d40);
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.5rem;
+    }
+    .resume-download {
+      margin-top: 1rem;
+    }
+    .resume-download a {
+      display: inline-block;
+      background-color: #00acc1;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .resume-download a:hover {
+      background-color: #007c91;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #00695c;
+      text-align: center;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: #00acc1;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .project, .skill {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover, .skill:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .project h3 {
+      margin-bottom: 1rem;
+      color: #00796b;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #b2dfdb;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #004d40;
+      color: white;
+      font-weight: 300;
+    }
+  </style>
+  <style>
+    body {
+      font-family: 'fantasy', sans-serif;
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      color: #0a3946;
+    }
+    header {
+      background: linear-gradient(135deg, #81ecec, #74b9ff);
+      color: white;
+    }
+    
+    .section-title {
+      color: #d63031;
+    }
+    .section-title::after {
+      background-color: #fab1a0;
+    }
+    .project, .skill {
+      background: linear-gradient(to bottom right, #ffeaa7, #fab1a0);
+      color: #2d3436;
+    }
+    .skill {
+      background: linear-gradient(135deg, #a29bfe, #81ecec);
+      color: #2d3436;
+    }
+    .contact-info {
+      color: #2d3436;
+    }
+    .contact-info i {
+      color: #6c5ce7;
+    }
+    footer {
+      background-color: #6c5ce7;
+      color: white;
+    }
+    .social-icons a:hover {
+      color: #ffeaa7;
+    }
+  </style>
+  
+
+<style>
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .skill {
+    background: linear-gradient(135deg, #81ecec, #74b9ff);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>Sajagata Ojha</h1>
+    <p>Data Scientist | Machine Learning and Artificial Intelligence Enthusiast</p>
+    
+  </header>
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto; font-size: 1.1rem;">
+      I’m a final-year B.Tech Computer Science student driven by curiosity, creativity, and the pursuit of innovation. With hands-on experience in machine learning, data analysis, and web development, I blend academic learning with real-world applications. I’ve led and contributed to impactful projects that reflect not just technical proficiency, but a passion for building smarter, scalable solutions.
+      <br><br>
+      I thrive on solving challenging problems, staying updated with cutting-edge technologies, and continuously sharpening my skills through self-learning and collaboration. Whether it's designing data-driven models, automating workflows, or crafting intuitive user interfaces, I approach every task with a growth mindset and a deep commitment to excellence.
+      <br><br>
+      I envision a future where technology empowers positive change—and I'm determined to be a part of it. Ready to bring value, innovation, and energy to the next big opportunity.
+    </p>
+  </section>
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="churn.png.png" alt="Customer Churn Prediction">
+        <h3>Customer Churn Prediction</h3>
+        <p>Developed a machine learning model using logistic regression and random forests to predict customer churn with 85% accuracy.</p>
+      </div>
+      <div class="project">
+        <img src="eda.png" alt="CHRONIC EDA">
+        <h3>Exploratory Data Analysis on Chronic Illness</h3>
+        <p>Performed EDA using Python, Pandas, Seaborn and plotly to visualize trends in kidney disease case data among people. </p>
+      </div>
+      <div class="project">
+        <img src="sentiment.jpeg" alt="Sentiment Analysis">
+        <h3>Sentiment Analysis on social media comments</h3>
+        <p>Built a sentiment classification model using NLP techniques, Machine Learning model and Python to analyze public sentiment on social media.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill">Python( APIs, Flask )</div>
+      <div class="skill">Pandas & NumPy</div>
+      <div class="skill">Matplotlib, Seaborn and plotly</div>
+      <div class="skill">Machine Learning (scikit-learn, ensembling models)</div>
+      <div class="skill">SQL, MongoDB and Django</div>
+      <div class="skill">Data Cleaning & Visualization</div>
+      <div class="skill">Deep Learning(Neural Networks, CNN, RNN)</div>
+      <div class="skill"> Generative AI</div>
+      <div class="skill"> HTML, CSS, Javascript</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-info" style="text-align:center; font-size:1.2rem; color:#004d40;">
+      <p><i class="fas fa-envelope"></i> sajagataojha@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 7007508953</p>
+      <p><i class="fas fa-map-marker-alt"></i>Uttar Pradesh, India</p>
+    </div>
+  </section>  
+
+  <footer>
+    <p>&copy; sajagataojha. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
