@@ -170,25 +170,46 @@
       background-color: #f0f4f8;
       text-align: center;
     }
+
     .snapshots-container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
     }
+
     .snapshot {
-      width: 700px;
-      flex-shrink: 0;
-      text-align: center;
-    }
-    .snapshot img {
       width: 100%;
-      height: 350px;
-      object-fit: cover;
+      max-width: 800px;
+      text-align: center;
+      background-color: #ffffff;
+      padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .snapshot:hover {
+      transform: scale(1.01);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .snapshot img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      max-height: none; /* remove restriction */
+      object-fit: cover;
+    }
+
+    .snapshot p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+
     .snapshot img:hover {
       transform: scale(1.03);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -330,7 +351,7 @@
     <h2 class="section-title">Contact Me</h2>
     <div class="contact-info" style="text-align:center; font-size:1.2rem; color:#004d40;">
       <p><i class="fas fa-envelope"></i> sajagataojha@gmail.com</p>
-      <p><i class="fas fa-phone"></i>+91 7007508953</p>
+      <p><i class="fas fa-phone"></i> +91 7007508953</p>
       <p><i class="fas fa-map-marker-alt"></i> Uttar Pradesh, India</p>
     </div>
   </section>
